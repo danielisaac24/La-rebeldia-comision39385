@@ -42,7 +42,7 @@ header{
 }
 main{
     width: 100%;
-    height: 70%;
+    height: 50%;
 }
 .banner{
     max-width: 100%;
@@ -133,7 +133,7 @@ footer{
     margin-right: 15px;
     font-size: 25px;
 }
-.card-hombres{
+.card-hombres , .card-mujeres{
     width: 100%;
     height: 100%;
     display: grid;
@@ -147,12 +147,12 @@ footer{
     ;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-
 }
-.fc11{
+.card-hombres .fc11 , .card-mujeres .fc11{
     grid-area: fc11;
     background-color: aqua;
 }
+
 /* .fc12{
     grid-area: fc12;
 }
@@ -204,12 +204,17 @@ footer{
 .fc36{
     grid-area: fc36;
 } */
-.card-hombres div{
+.card-hombres div , .card-mujeres div{
     width: 100%;
+    height: 100%;
     display: grid;
     justify-items: center;
 }
-.card-hombres div h3  {
-background-color: aquamarine;
+.card-hombres div h3 , .card-mujeres div h3{
+    background-color: aquamarine;
 }
-
+.card-hombres div img , .card-mujeres div img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden ;
+}
