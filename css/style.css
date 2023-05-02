@@ -74,9 +74,6 @@ main{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/* .cards div{
-    background-image:url("../assets/img/hombres.jpg");
-} */
 .cards div img{
     align-items: stretch;
     width: 300px;
@@ -152,58 +149,6 @@ footer{
     grid-area: fc11;
     background-color: aqua;
 }
-
-/* .fc12{
-    grid-area: fc12;
-}
-.fc13{
-    grid-area: fc13;
-}
-.fc14{
-    grid-area: fc14;
-}
-.fc15{
-    grid-area: fc15;
-}
-.fc16{
-    grid-area: fc16;
-}
-.fc21{
-    grid-area: fc21;
-}
-.fc22{
-    grid-area: fc22;
-}
-.fc23{
-    grid-area: fc23;
-}
-.fc24{
-    grid-area: fc24;
-}
-.fc25{
-    grid-area: fc25;
-}
-.fc26{
-    grid-area: fc26;
-}
-.fc31{
-    grid-area: fc31;
-}
-.fc32{
-    grid-area: fc32;
-}
-.fc33{
-    grid-area: fc33;
-}
-.fc34{
-    grid-area: fc34;
-}
-.fc35{
-    grid-area: fc35;
-}
-.fc36{
-    grid-area: fc36;
-} */
 .card-hombres div , .card-mujeres div{
     width: 100%;
     height: 100%;
@@ -218,3 +163,83 @@ footer{
     height: 100%;
     overflow: hidden ;
 }
+.hero{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+.persona-1 img{
+    width: 80%;
+    height: 80%;
+    overflow:hidden;
+    border-radius: 20%;
+}
+.persona-2 img{
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20%;
+}
+.texto-presentacion{
+    width: 70%;
+    height: 100%;
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+    text-align:left;
+}
+/* .persona-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+.foto-presentacion{
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    background-color: brown;
+    justify-items: center;
+    align-items: center;
+} */
+/* .foto-presentacion img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+/* .hero{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+} */
+/* .hero div{
+    width: 100%;
+    height: 100%;
+}
+.hero div img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.texto-presentacion{
+    display: grid;
+    width: 100%;
+    height: 200px;
+    justify-items: center;
+}
+.texto-presentacion p{
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-indent: 30%;
+} */
