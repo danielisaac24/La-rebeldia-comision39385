@@ -7,7 +7,6 @@
 
 body {
   background-color: #f5f5f5;
-  /* Estilos de la barra de navegación */
 }
 body header {
   width: 100%;
@@ -129,6 +128,62 @@ body main section section div button:hover {
 body main section section div:hover {
   transform: translateY(-5px);
 }
+body .hombre, body .mujeres, body .niños {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+body .hombre h2, body .mujeres h2, body .niños h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+body .hombre div, body .mujeres div, body .niños div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+body .hombre div div, body .mujeres div div, body .niños div div {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+body .hombre div div img, body .mujeres div div img, body .niños div div img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+body .hombre div div h3, body .mujeres div div h3, body .niños div div h3 {
+  font-size: 18px;
+  color: #333;
+}
+body .hombre div div p, body .mujeres div div p, body .niños div div p {
+  color: #777;
+}
+body .hombre div div button, body .mujeres div div button, body .niños div div button {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+body .hombre div div button a, body .mujeres div div button a, body .niños div div button a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+body .hombre div div button:hover, body .mujeres div div button:hover, body .niños div div button:hover {
+  background-color: #c2185b;
+}
+body .hombre div div:hover, body .mujeres div div:hover, body .niños div div:hover {
+  transform: translateY(-5px);
+}
 body footer {
   height: auto;
   background-color: #333;
@@ -151,63 +206,6 @@ body footer .seccion-footer2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.hombre, .mujeres, .niños {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.hombre h2, .mujeres h2, .niños h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-.hombre div, .mujeres div, .niños div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-.hombre div div, .mujeres div div, .niños div div {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-.hombre div div img, .mujeres div div img, .niños div div img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 10px;
-}
-.hombre div div h3, .mujeres div div h3, .niños div div h3 {
-  font-size: 18px;
-  color: #333;
-}
-.hombre div div p, .mujeres div div p, .niños div div p {
-  color: #777;
-}
-.hombre div div button, .mujeres div div button, .niños div div button {
-  background-color: #e91e63;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.hombre div div button a, .mujeres div div button a, .niños div div button a {
-  font-size: 14px;
-  text-decoration: none;
-  color: #fff;
-}
-.hombre div div button:hover, .mujeres div div button:hover, .niños div div button:hover {
-  background-color: #c2185b;
-}
-.hombre div div:hover, .mujeres div div:hover, .niños div div:hover {
-  transform: translateY(-5px);
 }
 
 .contacto {
@@ -237,9 +235,13 @@ body footer .seccion-footer2 {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 14px;
   border-radius: 3px;
   cursor: pointer;
+}
+.contacto section div form button a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
 }
 .contacto section div form button:hover {
   background-color: #c2185b;
@@ -249,6 +251,14 @@ body footer .seccion-footer2 {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  main {
+    width: 100%;
+  }
+  .hombre, .mujeres, .niños {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   body {
     padding: 10px;

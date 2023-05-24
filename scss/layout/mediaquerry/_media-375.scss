@@ -1,0 +1,29 @@
+@media(max-width:375px){
+    body {
+        header{
+            nav{
+                div{
+                    a{
+                        img {
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            width: auto;
+            section{
+                section{
+                    div{
+                        a{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

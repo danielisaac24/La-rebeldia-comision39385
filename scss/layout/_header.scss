@@ -1,0 +1,68 @@
+header{
+    width: 100%;
+    background-color: $background-nav-footer;
+    padding: 10px 0;
+    height: 80px;
+    nav{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin:0 auto;
+        justify-content: space-between;
+        align-items: end;
+        div{
+            margin: -20px;
+            a{
+                img{
+                    margin-top: 10px;
+                    width: 300px;
+                    height: auto;
+                    overflow: hidden;
+                }
+            }
+        }
+        label{
+            display: none;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+        }
+        input{
+            display: none;
+        }
+        ul{
+            margin-right: 20px;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3em;
+            li{
+                height: 100px;
+                list-style: none;
+                display: grid;
+                grid-auto-flow: column;
+                align-items: end;
+                font-size: 20px;
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+                }
+                :after{
+                    content: "";
+                    display: block;
+                    background-color: #fff;
+                    width:90%;
+                    margin-top: 3px;
+                    height: 3px;
+                    clip-path: var(--clippy);
+                    transition: clip-path .5s;
+                }
+                :hover{
+                    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 99%)
+                }
+            }
+        }
+    }
+}
