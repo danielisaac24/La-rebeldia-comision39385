@@ -1,3 +1,4 @@
+
 # Tienda de Lenceria - La Rebeldía
 
 
@@ -10,3 +11,5 @@
 - BOOTSTRAP
 - SEO
 - FIGMA
+### Portada del sitio.
+[img]: ./assets/img/Portada.png
