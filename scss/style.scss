@@ -1,14 +1,15 @@
 @import "./utilities/variable";
 @import "./base/reset";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 body {
     background-color: $background-body;
     @import "./layout/header";
     @import "./layout/main-index";
     @import "./layout/main-secciones";
-    @import "./layout/footer";
-    
+    @import"./layout/main-nosotros";
+    @import "./layout/main-contacto";
+    @import "./layout/footer";   
 }
-@import "./layout/main-contacto";
 @import"./layout/mediaquerry/media-1024";
 @import "./layout/mediaquerry/media-768";
 @import "./layout/mediaquerry/media-425";

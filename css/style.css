@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -184,7 +185,65 @@ body .hombre div div button:hover, body .mujeres div div button:hover, body .ni√
 body .hombre div div:hover, body .mujeres div div:hover, body .ni√±os div div:hover {
   transform: translateY(-5px);
 }
+body .nosotros {
+  width: 100%;
+  height: 100vh;
+}
+body .nosotros div h1 {
+  font-size: 60px;
+  padding: 1.25rem;
+}
+body .nosotros div div p{
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 30px;
+}
+body .contacto {
+  max-width: 970px
+}
+body .contacto section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+body .contacto section div form label {
+  width: 100%;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+body .contacto section div form input, body .contacto section div form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+body .contacto section div form button {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+body .contacto section div form button a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+body .contacto section div form button:hover {
+  background-color: #c2185b;
+}
+body .contacto section iframe {
+  border: 1px solid black;
+  width: 100%;
+}
 body footer {
+  margin-top: 30px;
   height: auto;
   background-color: #333;
   color: #fff;
@@ -201,54 +260,14 @@ body footer .seccion-footer1, body footer .seccion-footer3 {
   justify-content: space-between;
   align-items: end;
 }
+body footer .seccion-footer3 {
+  justify-content: center;
+}
 body footer .seccion-footer2 {
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.contacto {
-  width: 100%;
-}
-.contacto section {
-  width: 100%;
-  margin: 0 auto;
-  padding: 50px 0;
-  text-align: center;
-}
-.contacto section div form label {
-  width: 100%;
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.contacto section div form input, .contacto section div form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.contacto section div form button {
-  background-color: #e91e63;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.contacto section div form button a {
-  font-size: 14px;
-  text-decoration: none;
-  color: #fff;
-}
-.contacto section div form button:hover {
-  background-color: #c2185b;
-}
-.contacto section iframe {
-  border: 1px solid black;
-  width: 100%;
 }
 
 @media (max-width: 1024px) {
