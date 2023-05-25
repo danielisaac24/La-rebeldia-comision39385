@@ -1,4 +1,3 @@
-
 # Tienda de Lenceria - La Rebeldía
 
 
@@ -12,4 +11,4 @@
 - SEO
 - FIGMA
 ### Portada del sitio.
-(https://raw.githubusercontent.com/parzibyte/WaterPy/main/assets/img/Portada.png)
+![](https://github.com/danielisaac24/La-rebeldia-comision39385/blob/main/assets/img/Portada.png)
