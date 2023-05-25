@@ -12,4 +12,4 @@
 - SEO
 - FIGMA
 ### Portada del sitio.
-[img]: ./assets/img/Portada.png
+(https://raw.githubusercontent.com/parzibyte/WaterPy/main/assets/img/Portada.png)
