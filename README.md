@@ -9,3 +9,4 @@
 - SASS
 - BOOTSTRAP
 - SEO
+- FIGMA
