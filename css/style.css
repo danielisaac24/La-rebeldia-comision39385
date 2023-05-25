@@ -98,6 +98,7 @@ body main section section h2 {
   margin-bottom: 10px;
 }
 body main section section div {
+  height: 100%;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -106,8 +107,8 @@ body main section section div {
   transition: transform 0.3s ease;
 }
 body main section section div a img {
-  width: 300px;
-  height: auto;
+  width: 100%;
+  height:90%;
   margin-bottom: 10px;
 }
 body main section section div button {
