@@ -8,9 +8,10 @@ body {
     @import "./layout/main-secciones";
     @import"./layout/main-nosotros";
     @import "./layout/main-contacto";
-    @import "./layout/footer";   
+    @import "./layout/footer";  
 }
 @import"./layout/mediaquerry/media-1024";
+@import"./layout/mediaquerry/media-900";
 @import "./layout/mediaquerry/media-768";
 @import "./layout/mediaquerry/media-425";
-@import "./layout/mediaquerry/media-375";
+@import "./layout/mediaquerry/media-375"; 
