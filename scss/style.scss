@@ -10,6 +10,15 @@ body {
     @import "./layout/main-contacto";
     @import "./layout/footer";  
 }
+.background-hombres{
+    background-image: linear-gradient(to right top, #488cf4, #5ea1f5, #7ab5f4, #9bc8f2, #bedaf0);
+}
+.background-mujeres{
+    background-image: linear-gradient(to right top, #f272ed, #f296f3, #f2b6f6, #f3d4f7, #f5f0f6);
+}
+.background-niños{
+    background-image: linear-gradient(to right top, #eebd10, #ebc630, #e9ce46, #e8d65a, #e7de6d, #edd76b, #f2cf6a, #f6c86a, #ffaf61, #ff9462, #ff796b, #fb5f7a);
+}
 @import"./layout/mediaquerry/media-1024";
 @import"./layout/mediaquerry/media-900";
 @import "./layout/mediaquerry/media-768";

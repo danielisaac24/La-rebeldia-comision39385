@@ -68,11 +68,8 @@ body header nav ul li :after {
   width: 90%;
   margin-top: 3px;
   height: 3px;
-  -webkit-clip-path: var(--clippy);
-          clip-path: var(--clippy);
-  transition: -webkit-clip-path 0.5s;
+  clip-path: var(--clippy);
   transition: clip-path 0.5s;
-  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
 }
 body header nav ul li :hover {
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 99%) ;
@@ -94,7 +91,7 @@ body main section section {
 body main section section h2 {
   font-size: 24px;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 body main section section div {
   height: 100%;
@@ -130,21 +127,75 @@ body main section section div:hover {
   transform: translateY(-5px);
 }
 body .hombre, body .mujeres, body .niños {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
   padding: 20px;
+  z-index: 1;
+}
+body .hombre .publicidad, body .mujeres .publicidad, body .niños .publicidad {
+  width: 100%;
+  height: 100%;
+}
+body .hombre .publicidad .close-input, body .mujeres .publicidad .close-input, body .niños .publicidad .close-input {
+  display: none;
+}
+body .hombre .publicidad .close-input:checked + .slider, body .mujeres .publicidad .close-input:checked + .slider, body .niños .publicidad .close-input:checked + .slider {
+  display: none;
+}
+body .hombre .publicidad .slider, body .mujeres .publicidad .slider, body .niños .publicidad .slider {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+body .hombre .publicidad .slider ul, body .mujeres .publicidad .slider ul, body .niños .publicidad .slider ul {
+  padding: 0;
+  display: flex;
+  width: 300%;
+  height: 100%;
+}
+body .hombre .publicidad .slider ul li, body .mujeres .publicidad .slider ul li, body .niños .publicidad .slider ul li {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+body .hombre .publicidad .slider ul li img, body .mujeres .publicidad .slider ul li img, body .niños .publicidad .slider ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: slide-left 10s infinite alternate;
+  animation-timing-function: linear;
+}
+@keyframes slide-left {
+  0% {
+    margin-left: 0%;
+  }
+  30% {
+    margin-left: 0%;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
 }
 body .hombre h2, body .mujeres h2, body .niños h2 {
   font-size: 30px;
   color: #333;
   margin-bottom: 10px;
 }
-body .hombre div, body .mujeres div, body .niños div {
+body .hombre .product-grid, body .mujeres .product-grid, body .niños .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
-body .hombre div div, body .mujeres div div, body .niños div div {
+body .hombre .product-grid div, body .mujeres .product-grid div, body .niños .product-grid div {
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -155,19 +206,19 @@ body .hombre div div, body .mujeres div div, body .niños div div {
   text-align: center;
   transition: transform 0.3s ease;
 }
-body .hombre div div img, body .mujeres div div img, body .niños div div img {
+body .hombre .product-grid div img, body .mujeres .product-grid div img, body .niños .product-grid div img {
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
 }
-body .hombre div div h3, body .mujeres div div h3, body .niños div div h3 {
+body .hombre .product-grid div h3, body .mujeres .product-grid div h3, body .niños .product-grid div h3 {
   font-size: 18px;
   color: #333;
 }
-body .hombre div div p, body .mujeres div div p, body .niños div div p {
+body .hombre .product-grid div p, body .mujeres .product-grid div p, body .niños .product-grid div p {
   color: #777;
 }
-body .hombre div div button, body .mujeres div div button, body .niños div div button {
+body .hombre .product-grid div button, body .mujeres .product-grid div button, body .niños .product-grid div button {
   background-color: #e91e63;
   color: #fff;
   border: none;
@@ -175,15 +226,15 @@ body .hombre div div button, body .mujeres div div button, body .niños div div 
   border-radius: 3px;
   cursor: pointer;
 }
-body .hombre div div button a, body .mujeres div div button a, body .niños div div button a {
+body .hombre .product-grid div button a, body .mujeres .product-grid div button a, body .niños .product-grid div button a {
   font-size: 14px;
   text-decoration: none;
   color: #fff;
 }
-body .hombre div div button:hover, body .mujeres div div button:hover, body .niños div div button:hover {
+body .hombre .product-grid div button:hover, body .mujeres .product-grid div button:hover, body .niños .product-grid div button:hover {
   background-color: #c2185b;
 }
-body .hombre div div:hover, body .mujeres div div:hover, body .niños div div:hover {
+body .hombre .product-grid div:hover, body .mujeres .product-grid div:hover, body .niños .product-grid div:hover {
   transform: translateY(-5px);
 }
 body .nosotros {
@@ -270,6 +321,18 @@ body footer .seccion-footer2 {
   align-items: center;
 }
 
+.background-hombres {
+  background-image: linear-gradient(to right top, #488cf4, #5ea1f5, #7ab5f4, #9bc8f2, #bedaf0);
+}
+
+.background-mujeres {
+  background-image: linear-gradient(to right top, #f272ed, #f296f3, #f2b6f6, #f3d4f7, #f5f0f6);
+}
+
+.background-niños {
+  background-image: linear-gradient(to right top, #eebd10, #ebc630, #e9ce46, #e8d65a, #e7de6d, #edd76b, #f2cf6a, #f6c86a, #ffaf61, #ff9462, #ff796b, #fb5f7a);
+}
+
 @media (max-width: 1024px) {
   body header nav ul {
     gap: 1em;
@@ -289,10 +352,10 @@ body footer .seccion-footer2 {
   body .hombre, body .mujeres, body .niños {
     width: 90%;
   }
-  body .hombre div div img, body .mujeres div div img, body .niños div div img {
+  body .hombre .product-grid div img, body .mujeres .product-grid div img, body .niños .product-grid div img {
     width: 90%;
   }
-  body .hombre div div button a, body .mujeres div div button a, body .niños div div button a {
+  body .hombre .product-grid div button a, body .mujeres .product-grid div button a, body .niños .product-grid div button a {
     font-size: 12px;
   }
 }
@@ -312,7 +375,7 @@ body footer .seccion-footer2 {
   body .hombre, body .mujeres, body .niños {
     width: 85%;
   }
-  body .hombre div div img, body .mujeres div div img, body .niños div div img {
+  body .hombre .prodict-grid div img, body .mujeres .prodict-grid div img, body .niños .prodict-grid div img {
     width: 80%;
   }
 }
@@ -338,11 +401,8 @@ body footer .seccion-footer2 {
     bottom: 0;
     width: 100%;
     left: 0;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: -webkit-clip-path 0.2s;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: clip-path 0.2s;
-    transition: clip-path 0.2s, -webkit-clip-path 0.2s;
   }
   body header nav input:checked + ul {
     display: flex;
@@ -352,8 +412,7 @@ body footer .seccion-footer2 {
     padding: 10px 0;
     height: auto;
     font-size: 16px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   body main {
     width: 80%;
@@ -374,12 +433,12 @@ body footer .seccion-footer2 {
   body .hombre h2, body .mujeres h2, body .niños h2 {
     font-size: 20px;
   }
-  body .hombre div, body .mujeres div, body .niños div {
+  body .hombre .product-grid, body .mujeres .product-grid, body .niños .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
   }
-  body .hombre div div, body .mujeres div div, body .niños div div {
+  body .hombre .product-grid div, body .mujeres .product-grid div, body .niños .product-grid div {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -389,7 +448,7 @@ body footer .seccion-footer2 {
     text-align: center;
     transition: transform 0.3s ease;
   }
-  body .hombre div div img, body .mujeres div div img, body .niños div div img {
+  body .hombre .product-grid div img, body .mujeres .product-grid div img, body .niños .product-grid div img {
     width: 80%;
     height: 100%;
     margin-bottom: 10px;
@@ -435,12 +494,12 @@ body footer .seccion-footer2 {
   body main section section div a img {
     width: 100%;
   }
-  body .hombre div, body .mujeres div, body .niños div {
+  body .hombre .product-grid, body .mujeres .product-grid, body .niños .product-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 15px;
   }
-  body .hombre div div img, body .mujeres div div img, body .niños div div img {
+  body .hombre .product-grid div img, body .mujeres .product-grid div img, body .niños .product-grid div img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -462,4 +521,6 @@ body footer .seccion-footer2 {
   body main section section div a img {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
