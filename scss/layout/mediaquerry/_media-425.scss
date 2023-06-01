@@ -19,8 +19,7 @@
         main{
             width: auto;
             section{
-                grid-template-columns: repeat(1, 1fr);
-                grid-gap: 15px;
+                @include grid(repeat(1, 1fr), none, none, none, none, 15px);
                 section{
                     div{
                         a{
@@ -34,9 +33,7 @@
         }
         .hombre , .mujeres , .niños{
             .product-grid{
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                grid-gap: 15px;
+                @include grid(repeat(1, 1fr), none, none, none, none, 15px);
                 div{
                     img{
                         width: 100%;
@@ -48,10 +45,8 @@
         }
         footer{
             .seccion-footer1, .seccion-footer2, .seccion-footer3{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include flex(column, nowrap, space-between, center,none);
+
             }
         }
     }

@@ -83,9 +83,7 @@
             margin-bottom: 10px;
         }
         .product-grid{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
+            @include grid(repeat(3, 1fr), none, none, none, none, 20px);
             div{
                 height: 90%;
                 display: flex;

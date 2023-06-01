@@ -44,5 +44,8 @@
                 }
             }
         }
+        footer{
+            @include flex(row, nowrap, space-evenly, center,none);
+        }
     }
 }

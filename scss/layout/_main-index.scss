@@ -3,9 +3,7 @@ main{
     margin:  0 auto;
     padding: 20px;
     section{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        @include grid(repeat(3, 1fr), none, none, none, none, 20px);
         section{
             display: flex;
             flex-direction: column;
