@@ -8,6 +8,7 @@ footer{
     @include flex(row, wrap, space-evenly, center,none) ;
     .seccion-footer1, .seccion-footer3{
         width: 15%;
+
         @include flex(row, none, space-between, end,none);
     }
     .seccion-footer3{

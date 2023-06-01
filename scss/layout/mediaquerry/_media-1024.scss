@@ -44,6 +44,20 @@
                 }
             }
         }
+        .nosotros{
+            div{
+                h1{
+                    font-size: 40px;
+                    padding: 20px;
+                }
+                div{
+                    p{
+                        font-size: 28px;
+                    }
+        
+                }
+            }
+        }
         footer{
             @include flex(row, nowrap, space-evenly, center,none);
         }

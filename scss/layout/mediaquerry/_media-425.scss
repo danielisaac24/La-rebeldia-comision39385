@@ -43,6 +43,22 @@
                 }
             }
         }
+        .nosotros{
+            div{
+
+                width: 100%;
+                h1{
+                    font-size: 30px;
+                    padding: 10px;
+                }
+                div{
+                    p{
+                        text-align: justify;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
         footer{
             .seccion-footer1, .seccion-footer2, .seccion-footer3{
                 @include flex(column, nowrap, space-between, center,none);

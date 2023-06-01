@@ -76,6 +76,22 @@
                 }
             }
         }
+        .nosotros{
+            div{
+
+                width: 100%;
+                h1{
+                    font-size: 35px;
+                    padding: 10px;
+                }
+                div{
+                    p{
+                        text-align: justify;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
         footer{
             @include flex(column, nowrap, space-evenly, center,none);
             .seccion-footer1, .seccion-footer3{

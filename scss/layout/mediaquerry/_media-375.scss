@@ -25,5 +25,24 @@
                 }
             }
         }
+        footer{
+            .seccion-footer1{
+                a{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .seccion-footer3{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                p{
+                    font: 10px;
+                }
+            }
+        }
     }
 }
