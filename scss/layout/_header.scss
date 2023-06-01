@@ -4,12 +4,10 @@ header{
     padding: 10px 0;
     height: 80px;
     nav{
-        display: flex;
         height: 100%;
         width: 100%;
         margin:0 auto;
-        justify-content: space-between;
-        align-items: end;
+        @include flex(row,none,space-between,end,none);
         div{
             margin: -20px;
             a{
@@ -33,15 +31,12 @@ header{
         ul{
             margin-right: 20px;
             height: 100px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 3em;
+            @include flex(row,wrap,none,none,3em);
+
             li{
                 height: 100px;
                 list-style: none;
-                display: flex;
-                align-items: end;
+                @include flex(row,none,none,end,none);
                 font-size: 20px;
                 a{
                     color:#fff;
