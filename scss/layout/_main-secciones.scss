@@ -1,120 +1,120 @@
 
-.hombre , .mujeres , .niños{
-    width: 960px;
-    margin:  0 auto;
-    padding: 20px;
-    z-index: 1;
-    // estilos para el banner de publicidad---------------------------------
-    .publicidad {
-        width: 100%;
-        height: 100%;
-        // position: sticky;
-        // left: 0;
-        // top: 100px;
-        label {
+    .hombre , .mujeres , .niños{
+        width: 960px;
+        margin:  0 auto;
+        padding: 20px;
+        z-index: 1;
+        // estilos para el banner de publicidad---------------------------------
+        .publicidad {
+            width: 100%;
+            height: 100%;
+            // position: sticky;
+            // left: 0;
+            // top: 100px;
+            label {
 
-        }
-        .close-input{
-            display: none;
-        }
+            }
+            .close-input{
+                display: none;
+            }
 
-        .close-input:checked + .slider{
-            display: none;
-        }
+            .close-input:checked + .slider{
+                display: none;
+            }
 
-        .slider {
-        
-                width: 100%;
-                height: 70%;
-                overflow: hidden;
+            .slider {
+            
+                    width: 100%;
+                    height: 70%;
+                    overflow: hidden;
 
-        
-                ul {
-                    padding: 0;
-                    display: flex;
-                    width: 300%;
-                    height: 100%;
-        
-                    li {
-                        width: 100%;
+            
+                    ul {
+                        padding: 0;
+                        display: flex;
+                        width: 300%;
                         height: 100%;
-                        list-style: none;
-        
-                        img {
+            
+                        li {
                             width: 100%;
                             height: 100%;
-                            object-fit: contain;
-                            animation: slide-left 10s infinite alternate;
-                            animation-timing-function: linear;
-                        }
-        
-                        @keyframes slide-left {
-                            0% {
-                                margin-left: 0%;
+                            list-style: none;
+            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                animation: slide-left 10s infinite alternate;
+                                animation-timing-function: linear;
                             }
-        
-                            30% {
-                                margin-left: 0%;
-                            }
-        
-                            35% {
-                                margin-left: -100%;
-                            }
-        
-                            65% {
-                                margin-left: -100%;
-                            }
-        
-                            70% {
-                                margin-left: -200%;
-                            }
-        
-                            100% {
-                                margin-left: -200%;
+            
+                            @keyframes slide-left {
+                                0% {
+                                    margin-left: 0%;
+                                }
+            
+                                30% {
+                                    margin-left: 0%;
+                                }
+            
+                                35% {
+                                    margin-left: -100%;
+                                }
+            
+                                65% {
+                                    margin-left: -100%;
+                                }
+            
+                                70% {
+                                    margin-left: -200%;
+                                }
+            
+                                100% {
+                                    margin-left: -200%;
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-        
-       // estilos para el banner de publicidad-----------------------------
-    h2{
-        font-size: 30px;
-        color: #333;
-        margin-bottom: 10px;
-    }
-    .product-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-        div{
-            height: 90%;
-            display: flex;
-            flex-direction: column;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-            img{
-                width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
-            }
-            h3 {
-                font-size: 18px;
-                color: #333;
-            }
             
-            p {
-                color: #777;
-            }
-            @import"../components/botones";
+        // estilos para el banner de publicidad-----------------------------
+        h2{
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 10px;
         }
-        div:hover{
-            transform: translateY(-5px);
+        .product-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            div{
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                transition: transform 0.3s ease;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    font-size: 18px;
+                    color: #333;
+                }
+                
+                p {
+                    color: #777;
+                }
+                @import"../components/botones-secciones";
+            }
+            div:hover{
+                transform: translateY(-5px);
+            }
         }
     }
-}

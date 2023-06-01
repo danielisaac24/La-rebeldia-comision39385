@@ -1,0 +1,31 @@
+.botones-hombre{
+// background-color: #e91e63;
+    background-image: linear-gradient(to right top, #488cf4, #5ea1f5, #7ab5f4, #9bc8f2, #bedaf0);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    a{
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.botones-hombre:hover{
+    background-image: linear-gradient(to right top, #000000, #292b2e, #7ab5f4, #9bc8f2, #bedaf0);
+    }
+.botones-mujer{
+    @extend .botones-hombre;
+    background-image: linear-gradient(to right top, #f272ed, #f296f3, #f2b6f6, #f3d4f7, #f5f0f6);
+}
+.botones-mujer:hover{
+    background-image: linear-gradient(to right top, #000000, #292b2e, #f2b6f6, #f3d4f7, #f5f0f6);
+    }
+    .botones-niños{
+        @extend .botones-hombre;
+        background-image: linear-gradient(to right top, #eebd10, #ebc630, #e9ce46, #e8d65a, #e7de6d, #edd76b, #f2cf6a, #f6c86a, #ffaf61, #ff9462, #ff796b, #fb5f7a);
+    }
+    .botones-niños:hover{
+        background-image: linear-gradient(to right top, #000000, #292b2e, #20201e, #e8d65a, #e7de6d, #edd76b, #f2cf6a, #f6c86a, #ffaf61, #ff9462, #ff796b, #fb5f7a);
+        }
